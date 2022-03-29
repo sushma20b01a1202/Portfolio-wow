@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color:pink;
+  padding: 20px;
+  font-family: Arial;
+}
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+img {
+    border:solid;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+h2{
+    color:black;
+}
+
+.row {
+  margin: 8px -16px;
+}
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+<center>
+<h2>PORTFOLIO</h2>
+<hr>
+</center>
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="https://files.realpython.com/media/How-to-Run-A-Python-Script_Watermarked.65fe32bf5487.jpg" style="width:100%">
+      <h3>PYTHON SCRIPT</h3>
+      <p>The Python script is basically a file containing code written in Python. The file containing python script has the extension ' . py ' or can also have the extension ' . pyw ' if it is being run on a windows machine.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://domainsbot.com/wp-content/uploads/2018/07/DomainsRoBot-pointing.png"style="width:100%">
+      <h3>DOMAINS BOT</h3>
+      <p>DomainsBot provides domain and hosting professionals the data, insights and tools to better understand their customer base and their competitive landscape and to identify the best new business opportunities. We are a trusted partner of leading players in the domain and hosting industry.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://getcodify.com/wp-content/uploads/2019/06/Code-Compiler.jpg" style="width:100%">
+      <h3>PROGRAMMING COMPILER</h3>
+      <p>In computing, a compiler is a computer program that translates computer code written in one programming language into another language . The name "compiler" is primarily used for programs that translate source code from a high-level programming language to a lower level language to create an executable program</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
